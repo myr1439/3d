@@ -88,10 +88,10 @@ main{margin-top: 110px;}
 .sec2{position: relative; margin-top: 230px; height: 100vh;}
 
 .tit2{position: absolute; top: 0; right: 40px;}
-.txt1{padding-top: 266px; width: 230px; padding-left: 193px; text-align: right;}
-.txt2{position: absolute; top: 496px; right: 40px; width: 279px;}
+.txt1{padding-top: 180px; width: 230px; padding-left: 193px; text-align: right;}
+.txt2{position: absolute; top: 425px; right: 40px; width: 279px;}
 .sec2 .txtBox{
-    position: absolute; top: 808px; left: 50%;
+    position: absolute; top: 695px; left: 50%;
     transform: translateX(-50%);
     display: flex; flex-direction: column; align-items: center;
 }
@@ -102,5 +102,8 @@ main{margin-top: 110px;}
 .sec3{position: relative; height: 100vh;}
 .sec3 .yel{color: #e0901a;}
 .sec3 p{font-weight: bold;}
-.sec3 .textBox{position: absolute; top: 185px; left: 109px; width: 212px;}
-.sec3 .textBox2{position: absolute; top: 666px; right: 109px; width: 231px;}
+.sec3 .textBox{
+    position: absolute; top: 185px; left: 109px; width: 212px;
+    text-align: right;
+}
+.sec3 .textBox2{position: absolute; top: 490px; right: 109px; width: 231px;}
