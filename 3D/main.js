@@ -50,10 +50,10 @@ app
         tl({
             scrollTrigger:{
                 trigger: ".sec2",
-                start: "-30% bottom",
+                start: "-20% bottom",
                 end:"top top",
                 scrub:1,
-                markers:true,
+                //markers:true,
                 onEnter:()=>{
                     stopRotation.pause()
                 },
@@ -66,13 +66,13 @@ app
         })
         .to(iMac.rotation,{x:0,y:-Math.PI*1.49,z:0})
         .to(iMac.scale,{x:1,y:1,z:1})
-        .to(iMac.position,{x:0,y:0,z:-7},0)
+        .to(iMac.position,{x:0,y:0,z:0},0)
 
         tl({
             scrollTrigger:{
                 trigger: ".sec2",
                 start: "bottom bottom",
-                end:"+=100%",
+                end:"+=50%",
                 scrub:1,
                 pin:true
             }
@@ -88,7 +88,7 @@ app
             }
         })
         .to(iMac.scale,{x:-0.5,y:0.5,z:0.5})
-        .to(iMac.position,{x:0,y:0,z:-250},0)
+        .to(iMac.position,{x:0,y:0,z:-150},0)
         .to(iMac.rotation,{x:0,y:-Math.PI*2,z:0})
 
         tl({
@@ -108,13 +108,20 @@ app
             scrollTrigger:{
                 trigger:".sec3",
                 start:"bottom bottom",
-                end:"+=100%",
+                end:"+=50%",
                 scrub:2,
                 //markers:true,
                 pin:true
             }
         })
     })
+
+
+
+
+gsap.from(".sec1 .textbox h3",{opacity:0, y:20},0.5)
+gsap.from(".sec1 .textbox p",{opacity:0, y:20},0.7)
+
 
     
 

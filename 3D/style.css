@@ -7,12 +7,14 @@ li{list-style: none;}
 a{text-decoration: none; color: #333; display: block;}
 
 body{font-family: "Noto Sans", sans-serif;}
-.container{margin: 0 40px;}
+section{overflow: hidden;}
 .tit{
     font-family: "Bebas Neue", sans-serif; 
     color: #E0901A;
-    font-size: 40px;
+    font-size: 50px;
 }
+p.yel{color: #e0901A;}
+
 /* canvas */
 .canvas-cont {
     position: fixed;
@@ -50,7 +52,7 @@ main{margin-top: 110px;}
 /* sec1 */
 .sec1{height: 80vh;}
 .textbox{
-    padding-left: 40px;
+    padding-left: 70px;
     width: 502px;
 }
 .textbox .tit{}
@@ -59,16 +61,30 @@ main{margin-top: 110px;}
     padding-bottom: 3px;
     line-height: 22px;
 }
+
+/* .tit{   
+    transition: 0.3s;
+    animation: tb_ani 0.3s linear;
+}
+
+@keyframes tb_ani{
+    0%{opacity: 0; transform: translateY(30px);}
+    100%{opacity: 1; transform: translateY(0px);}
+} */
 .textbox .evt{
     font-weight: bold;
 }
-.textbox .evt i{}
+.textbox .evt i{
+    padding-left: 3px;
+    font-size: 12px;
+}
 
 .txtAni{
-    position: absolute;
+    position: relative;
     overflow: hidden;
     margin-top: 161px;
     z-index: -100;
+    width: 100vw;
 }
 .txtAni .txt_ani{
     font-size: 150px;
@@ -87,23 +103,21 @@ main{margin-top: 110px;}
 /* sec2 */
 .sec2{position: relative; margin-top: 230px; height: 100vh;}
 
-.tit2{position: absolute; top: 0; right: 40px;}
-.txt1{padding-top: 180px; width: 230px; padding-left: 193px; text-align: right;}
-.txt2{position: absolute; top: 425px; right: 40px; width: 279px;}
+.tit2{position: absolute; top: 40px; right: 70px;}
+.txt1{padding-top: 242px; width: 230px; padding-left: 240px; text-align: right;}
+.txt2{position: absolute; top: 545px; right: 170px; width: 279px;}
 .sec2 .txtBox{
-    position: absolute; top: 695px; left: 50%;
+    position: absolute; top: 809px; left: 50%;
     transform: translateX(-50%);
     display: flex; flex-direction: column; align-items: center;
 }
 .sec2 .txtBox .txt3{}
-.sec2 .txtBox span{font-weight: bold; color: #E0901A;}
 
 /* sec3 */
 .sec3{position: relative; height: 100vh;}
-.sec3 .yel{color: #e0901a;}
 .sec3 p{font-weight: bold;}
-.sec3 .textBox{
+.sec3 .txtbox1{
     position: absolute; top: 185px; left: 109px; width: 212px;
     text-align: right;
 }
-.sec3 .textBox2{position: absolute; top: 490px; right: 109px; width: 231px;}
+.sec3 .txtbox2{position: absolute; top: 490px; right: 140px; width: 231px;}
