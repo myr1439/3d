@@ -50,7 +50,7 @@ app
         tl({
             scrollTrigger:{
                 trigger: ".sec2",
-                start: "-20% bottom",
+                start: "top bottom",
                 end:"top top",
                 scrub:1,
                 //markers:true,
@@ -65,13 +65,13 @@ app
             }
         })
         .to(iMac.rotation,{x:0,y:-Math.PI*1.49,z:0})
-        .to(iMac.scale,{x:1,y:1,z:1})
+        .to(iMac.scale,{x:1.1,y:1.1,z:1.1})
         .to(iMac.position,{x:0,y:0,z:0},0)
 
         tl({
             scrollTrigger:{
                 trigger: ".sec2",
-                start: "bottom bottom",
+                start: "80% bottom",
                 end:"+=50%",
                 scrub:1,
                 pin:true
@@ -81,15 +81,15 @@ app
         tl({
             scrollTrigger:{
                 trigger:".sec3",
-                start:"20% bottom",
-                end:"50% bottom",
+                start:"top bottom",
+                end:"bottom bottom",
                 scrub:2,               
-                //markers:true
+                markers:true
             }
         })
-        .to(iMac.scale,{x:-0.5,y:0.5,z:0.5})
-        .to(iMac.position,{x:0,y:0,z:-150},0)
-        .to(iMac.rotation,{x:0,y:-Math.PI*2,z:0})
+        .to(iMac.scale,{x:0.5,y:0.5,z:0.5},0)
+        .to(iMac.rotation,{x:0,y:-Math.PI*3,z:0},0)
+        .to(iMac.position,{x:0,y:0,z:-200},0)
 
         tl({
             scrollTrigger:{
@@ -100,9 +100,9 @@ app
                 markers:true
             }
         })
-        .to(iMac.scale,{x:1,y:1,z:1})
-        .to(iMac.position,{x:0,y:1,z:0},0)
-        .to(iMac.rotation,{x:0,y:-Math.PI*2.85,z:0})
+        .to(iMac.scale,{x:1,y:1,z:1},0)
+        .to(iMac.position,{x:0,y:0,z:0},0)
+        .to(iMac.rotation,{x:0,y:-Math.PI*2.85,z:0},0)
 
         tl({
             scrollTrigger:{
