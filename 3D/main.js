@@ -100,7 +100,7 @@ app
                 markers:true
             }
         })
-        .to(iMac.scale,{x:1,y:1,z:1},0)
+        .to(iMac.scale,{x:0.8,y:0.8,z:0.8},0)
         .to(iMac.position,{x:0,y:0,z:0},0)
         .to(iMac.rotation,{x:0,y:-Math.PI*2.85,z:0},0)
 
