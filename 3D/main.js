@@ -74,7 +74,8 @@ app
                 start: "80% bottom",
                 end:"+=50%",
                 scrub:1,
-                pin:true
+                pin:true,
+                //markers:true
             }
         })
 
@@ -84,7 +85,7 @@ app
                 start:"top bottom",
                 end:"bottom bottom",
                 scrub:2,               
-                markers:true
+                //markers:true
             }
         })
         .to(iMac.scale,{x:0.5,y:0.5,z:0.5},0)
@@ -95,9 +96,9 @@ app
             scrollTrigger:{
                 trigger:".sec3",
                 start:"50% bottom",
-                end:"100% bottom",
-                scrub:3,
-                markers:true
+                end:"bottom bottom",
+                scrub:2,
+                //markers:true
             }
         })
         .to(iMac.scale,{x:0.8,y:0.8,z:0.8},0)
@@ -114,6 +115,56 @@ app
                 pin:true
             }
         })
+
+        tl({
+            scrollTrigger:{
+                trigger:".sec4",
+                start:"50% bottom",
+                end:"bottom bottom",
+                scrub:2,
+                //markers:true
+            }
+        })
+        .to(iMac.scale,{x:2,y:2,z:2},0)
+        .to(iMac.position,{x:0,y:-10,z:0},0)
+        .to(iMac.rotation,{x:0,y:-Math.PI*2,z:-Math.PI*2.02},0)
+
+        tl({
+            scrollTrigger:{
+                trigger:".sec5",
+                start:"50% bottom",
+                end:"bottom bottom",
+                scrub:2,
+                markers:true
+            }
+        })
+        .to(iMac.scale,{x:0.9,y:0.9,z:0.9},0)
+        .to(iMac.position,{x:0,y:-2,z:-60},0)
+        .to(iMac.rotation,{x:0,y:-Math.PI*4.25,z:-Math.PI*2.02},0)
+
+        tl({
+            scrollTrigger:{
+                trigger:".sec5",
+                start:"bottom bottom",
+                end:"+=50%",
+                scrub:2,
+                //markers:true,
+                pin:true
+            }
+        })
+
+        tl({
+            scrollTrigger:{
+                trigger:".sec6",
+                start:"50% bottom",
+                end:"bottom bottom",
+                scrub:2,
+                markers:true
+            }
+        })
+        .to(iMac.scale,{x:0.8,y:0.8,z:0.8},0)
+        .to(iMac.position,{x:0,y:10,z:0},0)
+        .to(iMac.rotation,{x:0,y:-Math.PI*3.85,z:-Math.PI*4.02},0)
     })
 
 
